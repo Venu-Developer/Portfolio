@@ -86,15 +86,20 @@ export const Allskills = [
         image:
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
       },
-      {
-        name: "MySQL",
-        image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
-      },
+      // {
+      //   name: "MySQL",
+      //   image:
+      //     "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
+      // },
       {
         name: "MongoDB",
         image:
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
+      },
+      {
+        name: "JWT",
+        image:
+          "jwt.png",
       },
     ],
   },
@@ -124,10 +129,10 @@ export const Allskills = [
         name:"C program",
         image:"C Programming.jpg"
       },
-      {
-        name:"Java",
-        image:'java.png'
-      },
+      // {
+      //   name:"Java",
+      //   image:'java.png'
+      // },
     ],
   },
 ];

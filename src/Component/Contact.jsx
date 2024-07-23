@@ -139,8 +139,8 @@ function Contact() {
         <div className="w-full lg:w-1/2 pb-10  p-5 bg-[#1EAE98] border-[#1EAE98] rounded-lg text-gray-300  font-serif">
           <div>
             <div className="flex ">
-              <IoLocationSharp className="text-[90px] lg:text-5xl mb-3 text-[#002A5B]" />
-              <div className="mx-3 mt-7 lg:mt-2">
+              <IoLocationSharp className="text-[70px] sm:text-4xl mb-3 text-[#002A5B]" />
+              <div className="mx-3 mt-5 sm:mt-1">
                 <p>Address</p>
                 <p className="flex flex-row">
                   {" "}
@@ -191,41 +191,44 @@ function Contact() {
         <div className="w-full lg:w-1/2 flex justify-center max-lg:mt-10">
           <div className="border border-[#1EAE98] shadow-md  p-2 bg-[#1EAE98]  rounded-lg">
             <form ref={form} onSubmit={sendEmail}>
-              <div className="m-2 text-[#002A5B] font-serif py-2">
-                <label className="mr-8">Name</label>
+              <div className="m-2 text-[#002A5B] font-serif py-2 ">
+                {/* <label className="mr-8">Name</label> */}
                 <input
-                  className="text-black rounded-md"
+                  className="text-black rounded-md p-1 pr-4"
                   type="text"
                   name="from_name"
                   onChange={updatingNameValue}
                   value={userName}
+                  placeholder="Name"
                 />
-                <p className="text-center text-sm mr-[-5px] mt-1 text-[#002A5B]">
+                <p className=" text-sm mr-[-5px] mt-1 text-[#002A5B]">
                   {validName ? "" : "Enter the name"}
                 </p>
               </div>
-              <div className="m-1 text-[#002A5B] font-serif py-0">
-                <label className="mr-9">Email</label>
+              <div className="m-2 text-[#002A5B] font-serif py-0">
+                {/* <label className="mr-9">Email</label> */}
                 <input
-                  className="text-black rounded-md"
+                  className="text-black rounded-md p-1 pr-4"
                   type="email"
                   name="from_name"
                   onChange={updatingEmailValue}
                   value={userEmail}
+                  placeholder="Email"
                 />
-                <p className="text-center text-sm mr-[-37px] mt-1 text-[#002A5B]">
+                <p className=" text-sm mr-[-37px] mt-1 text-[#002A5B] ">
                   {validEmail ? "" : "Enter the valid email"}
                 </p>
               </div>
               <div className="m-2 text-[#002A5B] font-serif py-2">
-                <label className="mr-3">Message</label>
+                {/* <label className="mr-3">Message</label> */}
                 <textarea
                   onChange={updatingMeaasageValue}
                   value={userMessage}
-                  className="text-black rounded-md "
+                  className="text-black rounded-md pr-4 p-2"
                   name="message"
+                  placeholder="Message"
                 />
-                <p className="text-center text-sm mr-[-60px]  text-[#002A5B]">
+                <p className="text-sm mr-[-60px]  text-[#002A5B]">
                   {!validMessage && "Type more than 10 letter"}
                 </p>
               </div>
