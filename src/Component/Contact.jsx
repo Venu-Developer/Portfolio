@@ -77,7 +77,7 @@ function Contact() {
     e.preventDefault();
     if (userMessage && validName && validEmail) {
       emailjs
-        .sendForm("service_gm0npk6", "template_n7k3yrj", form.current, {
+        .sendForm("service_mu5yot8", "template_n7k3yrj", form.current, {
           publicKey: "q_LzlKzvvjpuEtG-u",
         })
         .then(
